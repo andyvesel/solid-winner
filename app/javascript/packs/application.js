@@ -12,5 +12,5 @@ import { render } from 'react-dom';
 import App from '../components/App';
 
 document.addEventListener('DOMContentLoaded', () => {
-	render(<App />, document.querySelector('#root'));
+  render(<App />, document.querySelector('#root'));
 });

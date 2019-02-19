@@ -1,14 +1,14 @@
 import React from 'react';
 import axios from 'axios';
 import Header from './Header';
-import EventList from 'EventList';
+import EventList from './EventList';
 
-class Editor extends React.component {
+class Editor extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      events: null;
+      events: null,
     };
   }
 
@@ -20,6 +20,7 @@ class Editor extends React.component {
         console.log(error);
       });
   }
+
   render() {
     const { events } = this.state;
     if (events === null) return null;
@@ -32,3 +33,5 @@ class Editor extends React.component {
     );
   }
 }
+
+export default Editor;
