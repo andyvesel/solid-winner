@@ -10,9 +10,11 @@ class EventList extends React.Component {
 
     return events.map(event => (
       <li key={event.id}>
+        <Link to={`/events/${event.id}`}>
         {event.event_date}
         {' - '}
         {event.event_type}
+        </Link>
       </li>
     ));
   }
