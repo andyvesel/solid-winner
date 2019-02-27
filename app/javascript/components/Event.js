@@ -44,7 +44,7 @@ const Event = ({ event }) => (
 );
 
 Event.propTypes = {
-  event: propTypes.shape(),
+  event: PropTypes.shape(),
 };
 
 Event.defaultProps = {
