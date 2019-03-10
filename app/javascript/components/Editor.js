@@ -4,7 +4,9 @@ import Header from './Header';
 import EventList from './EventList';
 import PropTypes from 'prop-types';
 import PropsRoute from './PropsRoute';
-import Event from './Event'
+import Event from './Event';
+import { Switch } from 'react-router-dom';
+import EventForm from './EventForm';
 
 class Editor extends React.Component {
   constructor(props) {
